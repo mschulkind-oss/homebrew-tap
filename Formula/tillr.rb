@@ -1,8 +1,8 @@
 class Tillr < Formula
   desc "Human-in-the-loop project management for agentic development"
   homepage "https://github.com/mschulkind-oss/tillr"
-  url "https://github.com/mschulkind-oss/tillr/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "8f9aa37ede8c80a8d81772500d9797cc98a60eedf7f5eadf376eac5a7f889bf3"
+  url "https://github.com/mschulkind-oss/tillr/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "1ca8fab457fee30f05bd1d1f8f2ba217e52070cc07437d883c1f52e1e31d83d3"
   license "Apache-2.0"
 
   depends_on "go" => :build
@@ -16,7 +16,6 @@ class Tillr < Formula
     ldflags = %W[
       -s -w
       -X github.com/mschulkind-oss/tillr/internal/version.Version=#{version}
-      -X github.com/mschulkind-oss/tillr/internal/version.GitCommit=#{Utils.git_short_head}
     ]
     system "go", "build", *std_go_args(ldflags:), "./cmd/tillr"
   end
