@@ -1,8 +1,8 @@
 class Tillr < Formula
   desc "Human-in-the-loop project management for agentic development"
   homepage "https://github.com/mschulkind-oss/tillr"
-  url "https://github.com/mschulkind-oss/tillr/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "25c73435d155fa28425615db90fbaec6362a8c15d74382895143eb551d90871c"
+  url "https://github.com/mschulkind-oss/tillr/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "08df193049dfc4a5ef1a0ecd44a86c9f49f203f28d51b9f6c660d17879168639"
   license "Apache-2.0"
 
   depends_on "go" => :build
