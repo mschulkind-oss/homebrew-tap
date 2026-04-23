@@ -4,8 +4,8 @@ class VantageMd < Formula
   desc "Beautiful local Markdown viewer with live reload and Git awareness"
   homepage "https://github.com/mschulkind-oss/vantage"
   license "Apache-2.0"
-  url "https://files.pythonhosted.org/packages/46/f0/51587f34e7ee1d3f68a4b034141ccc9f74eb05a742ff4b19f5708026e56a/vantage_md-0.4.1.tar.gz"
-  sha256 "3530dd9e5081532ff4bff2d3f90307e64885f3037331e1d08107802070363972"
+  url "https://files.pythonhosted.org/packages/08/fe/415f628afdd079507b4ed82078f78f4ae3362e2f69c6dcbd23699e65383d/vantage_md-0.4.2.tar.gz"
+  sha256 "113d642814375aecd7ef723d8329ecd4c9786a9912367e1951ff0bfb15aea1f4"
 
   depends_on "python@3.13"
 
@@ -125,8 +125,8 @@ class VantageMd < Formula
   end
 
   resource "uvicorn" do
-    url "https://files.pythonhosted.org/packages/eb/2e/62b0d9a2cfc8b4de6771322dae30f2db76c66dae9ec32e94e176a44ad563/uvicorn-0.45.0.tar.gz"
-    sha256 "3fe650df136c5bd2b9b06efc5980636344a2fbb840e9ddd86437d53144fa335d"
+    url "https://files.pythonhosted.org/packages/1f/93/041fca8274050e40e6791f267d82e0e2e27dd165627bd640d3e0e378d877/uvicorn-0.46.0.tar.gz"
+    sha256 "fb9da0926999cc6cb22dc7cd71a94a632f078e6ae47ff683c5c420750fb7413d"
   end
 
   resource "uvloop" do
