@@ -4,8 +4,8 @@ class YoloJail < Formula
   desc "Secure container jail for AI agents — run Claude Code, Copilot, and Gemini in YOLO mode safely"
   homepage "https://github.com/mschulkind-oss/yolo-jail"
   license "Apache-2.0"
-  url "https://files.pythonhosted.org/packages/29/56/453f0cbbec3778e92d541dbe7617204000fd1a9d6b9668b6bdd7c407bce7/yolo_jail-0.4.1.tar.gz"
-  sha256 "479b4a5ea2ae5d57beb26c334fb19512b541c47c3cb92aad05b1ad19d1868aba"
+  url "https://files.pythonhosted.org/packages/bd/5b/6fc172c182aa3e3addee6f6b89dc42d0d92582541a92573888f622373ba2/yolo_jail-0.4.2.tar.gz"
+  sha256 "b1cca9bda2e4b6be68d64af8e050e403fd2c38ff97fd9eb9d0af5622315d1f0c"
 
   depends_on "python@3.13"
 
@@ -15,8 +15,8 @@ class YoloJail < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/57/75/31212c6bf2503fdf920d87fee5d7a86a2e3bcf444984126f13d8e4016804/click-8.3.2.tar.gz"
-    sha256 "14162b8b3b3550a7d479eafa77dfd3c38d9dc8951f6f69c78913a8f9a7540fd5"
+    url "https://files.pythonhosted.org/packages/bb/63/f9e1ea081ce35720d8b92acde70daaedace594dc93b693c869e0d5910718/click-8.3.3.tar.gz"
+    sha256 "398329ad4837b2ff7cbe1dd166a4c0f8900c3ca3a218de04466f38f6497f18a2"
   end
 
   resource "markdown-it-py" do
@@ -50,8 +50,8 @@ class YoloJail < Formula
   end
 
   resource "typer" do
-    url "https://files.pythonhosted.org/packages/f5/24/cb09efec5cc954f7f9b930bf8279447d24618bb6758d4f6adf2574c41780/typer-0.24.1.tar.gz"
-    sha256 "e39b4732d65fbdcde189ae76cf7cd48aeae72919dea1fdfc16593be016256b45"
+    url "https://files.pythonhosted.org/packages/7b/27/ede8cec7596e0041ba7e7b80b47d132562f56ff454313a16f6084e555c9f/typer-0.25.0.tar.gz"
+    sha256 "123eaf9f19bb40fd268310e12a542c0c6b4fab9c98d9d23342a01ff95e3ce930"
   end
 
   def install
