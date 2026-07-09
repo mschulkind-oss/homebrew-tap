@@ -6,13 +6,13 @@
 class Polyclav < Formula
   desc "Live-piano host: MIDI keyboard -> soundfont/plugin synthesis -> CoreAudio"
   homepage "https://github.com/mschulkind-oss/polyclav"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mschulkind-oss/polyclav/releases/download/v0.1.4/polyclav-macos-arm64.tar.gz"
-      sha256 "5137ff831ed8c3cac809514c528d18ffe088bd800ef9dd7e060197dff79ad589"
+      url "https://github.com/mschulkind-oss/polyclav/releases/download/v0.1.5/polyclav-macos-arm64.tar.gz"
+      sha256 "8beca0d11284ea8d8bbdce1f4c299753c3122468ad0358f1865a43c0d26d319e"
 
       def install
         bin.install "polyclav"
