@@ -4,8 +4,8 @@ class YoloJail < Formula
   desc "Secure container jail for AI agents — run Claude Code, Copilot, and Gemini in YOLO mode safely"
   homepage "https://github.com/mschulkind-oss/yolo-jail"
   license "Apache-2.0"
-  url "https://files.pythonhosted.org/packages/de/a1/1cc62e371c837d9d68860b7c7de06186216bd166bc56a0848942c0ddb728/yolo_jail-0.4.3.tar.gz"
-  sha256 "2d2ce572d6461221e1a65e2e818492739eaceb8504174a40d01cab6c38c9ce99"
+  url "https://files.pythonhosted.org/packages/3a/96/9b43a6477278a1f29fe38175dc19e5149eb31dbd70fdd86f4dc0b7be71e1/yolo_jail-0.5.0.tar.gz"
+  sha256 "fed14128edf519992c84d80f98ac75d5fa40a55c336761730ac38e5997d2a12b"
 
   depends_on "python@3.13"
 
@@ -14,14 +14,9 @@ class YoloJail < Formula
     sha256 "fbcda96e87e9c92ad167c2e53839e57503ecfda18804ea28102353485033faa4"
   end
 
-  resource "click" do
-    url "https://files.pythonhosted.org/packages/bb/63/f9e1ea081ce35720d8b92acde70daaedace594dc93b693c869e0d5910718/click-8.3.3.tar.gz"
-    sha256 "398329ad4837b2ff7cbe1dd166a4c0f8900c3ca3a218de04466f38f6497f18a2"
-  end
-
   resource "markdown-it-py" do
-    url "https://files.pythonhosted.org/packages/5b/f5/4ec618ed16cc4f8fb3b701563655a69816155e79e24a17b651541804721d/markdown_it_py-4.0.0.tar.gz"
-    sha256 "cb0a2b4aa34f932c007117b194e945bd74e0ec24133ceb5bac59009cda1cb9f3"
+    url "https://files.pythonhosted.org/packages/06/ff/7841249c247aa650a76b9ee4bbaeae59370dc8bfd2f6c01f3630c35eb134/markdown_it_py-4.2.0.tar.gz"
+    sha256 "04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49"
   end
 
   resource "mdurl" do
@@ -35,8 +30,8 @@ class YoloJail < Formula
   end
 
   resource "pyjson5" do
-    url "https://files.pythonhosted.org/packages/6e/d9/005aaaf5077cde946282b22da9404965477fb140fa6836b52d2e0955a391/pyjson5-2.0.0.tar.gz"
-    sha256 "7ccc98586cf87dfeadfa76de8df4c9cb0c3d21d1b559e28812dd9633748d6e25"
+    url "https://files.pythonhosted.org/packages/f1/9a/3db19560e968d6e85b2a4ddf4b949c6ebf9dd1dcfb5a9f37736f8adeb927/pyjson5-2.0.1.tar.gz"
+    sha256 "a5b0e322e847b198a50d8a1ef16d6b2b19129644dc018d76773e81ef1487ca39"
   end
 
   resource "rich" do
@@ -50,8 +45,8 @@ class YoloJail < Formula
   end
 
   resource "typer" do
-    url "https://files.pythonhosted.org/packages/e4/51/9aed62104cea109b820bbd6c14245af756112017d309da813ef107d42e7e/typer-0.25.1.tar.gz"
-    sha256 "9616eb8853a09ffeabab1698952f33c6f29ffdbceb4eaeecf571880e8d7664cc"
+    url "https://files.pythonhosted.org/packages/7c/f7/68adc395201b20b872d68e975386832e8005ffeacedd43a1d837a32815be/typer-0.26.8.tar.gz"
+    sha256 "c244a6bd558886fe3f8780efb6bdd28bb9aff005a94eedebaa5cb32926fe2f7e"
   end
 
   def install
