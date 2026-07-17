@@ -4,8 +4,8 @@ class YoloJail < Formula
   desc "Secure container jail for AI agents — run Claude Code, Copilot, and Gemini in YOLO mode safely"
   homepage "https://github.com/mschulkind-oss/yolo-jail"
   license "Apache-2.0"
-  url "https://files.pythonhosted.org/packages/3a/96/9b43a6477278a1f29fe38175dc19e5149eb31dbd70fdd86f4dc0b7be71e1/yolo_jail-0.5.0.tar.gz"
-  sha256 "fed14128edf519992c84d80f98ac75d5fa40a55c336761730ac38e5997d2a12b"
+  url "https://files.pythonhosted.org/packages/18/56/f0747fb0bff48086f26395b5027dc290bddccfc84d7ff33ea9dbad79e5cb/yolo_jail-0.6.0.tar.gz"
+  sha256 "b38a8f0ee4086387c1b79ba2e20ca2ad6d6efa5c126a4a5037074fe4d5b21a8b"
 
   depends_on "python@3.13"
 
@@ -45,8 +45,8 @@ class YoloJail < Formula
   end
 
   resource "typer" do
-    url "https://files.pythonhosted.org/packages/7c/f7/68adc395201b20b872d68e975386832e8005ffeacedd43a1d837a32815be/typer-0.26.8.tar.gz"
-    sha256 "c244a6bd558886fe3f8780efb6bdd28bb9aff005a94eedebaa5cb32926fe2f7e"
+    url "https://files.pythonhosted.org/packages/37/78/fda3361b56efc27944f24225f6ecd13d96d6fcfe37bd0eb34e2f4c63f9fc/typer-0.27.0.tar.gz"
+    sha256 "629bd12ea5d13a17148125d9a264f949eb171fb3f120f9b04d85873cab054fa5"
   end
 
   def install
