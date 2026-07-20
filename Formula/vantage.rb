@@ -1,28 +1,28 @@
 class Vantage < Formula
   desc "Beautiful local Markdown viewer with live reload and Git awareness"
   homepage "https://github.com/mschulkind-oss/vantage"
-  version "0.5.2"
+  version "0.5.3"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.2/vantage_0.5.2_darwin_arm64.tar.gz"
-      sha256 "7f98c104cb25ccbf6a0d4548d00277497c3e2d9dcca6f01f1d8f8b621ecbd3b3"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.3/vantage_0.5.3_darwin_arm64.tar.gz"
+      sha256 "1e97404df1d489f0dab4fbf4c0992b73348a97fb554b6c6dff7152bdeb92264e"
     end
     on_intel do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.2/vantage_0.5.2_darwin_amd64.tar.gz"
-      sha256 "f4debae5f681660ab454938eca8b9a0347d9152158cce36efd5055a8a82981fa"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.3/vantage_0.5.3_darwin_amd64.tar.gz"
+      sha256 "7f87f5977593e07f50ffe5511f534c401a4d2774005473cff1ecf6c71059232a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.2/vantage_0.5.2_linux_arm64.tar.gz"
-      sha256 "9d0115a32c46a4c29627dd7f2cd6afc82490ec4094682cd3c78b6f177e3a608d"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.3/vantage_0.5.3_linux_arm64.tar.gz"
+      sha256 "aba36a9ea41aecbdcb765fc9e34005dcb84138c1b821ad748242c0936ebec811"
     end
     on_intel do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.2/vantage_0.5.2_linux_amd64.tar.gz"
-      sha256 "288b4da5a6c9dab2cbcca5edf0cb5add3d47d40f43dd8d57e00773a35e41144d"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.5.3/vantage_0.5.3_linux_amd64.tar.gz"
+      sha256 "508415ec67fa75c6f4932a1b46eeced89bc01e47c39816914e18f5b37c2d008f"
     end
   end
 
