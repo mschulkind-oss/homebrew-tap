@@ -15,14 +15,14 @@ class Mavor < Formula
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
     url "https://github.com/mschulkind-oss/mavor/releases/download/v0.1.0/mavor_0.1.0_linux_amd64.tar.gz"
-    sha256 "1082e5b21b9108ac4ae72d0e006ed54a2584ceed7b89c8589033be09dda01476"
+    sha256 "3ee4aa5848f25a3c73f6c6bf05ea18b7d98d7fcd0c5709652566049aa3896f02"
     define_method(:install) do
       bin.install "mavor"
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/mschulkind-oss/mavor/releases/download/v0.1.0/mavor_0.1.0_linux_arm64.tar.gz"
-    sha256 "7612d337bcfec9237855aa81952aa6674c5847a2dba2eb2132dd3bc348986eee"
+    sha256 "cf3e533481356ba30ac7ea1816ea61011fbc3775c081944b519c8d6c9ea10439"
     define_method(:install) do
       bin.install "mavor"
     end
