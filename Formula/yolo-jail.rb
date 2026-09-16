@@ -1,8 +1,8 @@
 class YoloJail < Formula
   desc "Secure container jail for AI agents — run Claude Code, Copilot, and Gemini in YOLO mode safely"
   homepage "https://github.com/mschulkind-oss/yolo-jail"
-  url "https://github.com/mschulkind-oss/yolo-jail/archive/refs/tags/v0.8.0.tar.gz"
-  sha256 "636a8cd4f6a6785cfa26c3706ee5067a4c5fd005525cb6dbe5473b6284433e6d"
+  url "https://github.com/mschulkind-oss/yolo-jail/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "ba3b5150c94464b21b1056848a27e5088383ab8ece248508aedbe6466e387ad6"
   license "Apache-2.0"
 
   depends_on "go" => :build
