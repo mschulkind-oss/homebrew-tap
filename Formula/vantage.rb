@@ -2,28 +2,28 @@ class Vantage < Formula
   desc "Beautiful local Markdown viewer with live reload and Git awareness"
   # Installs two binaries: the  server and the  CLI.
   homepage "https://github.com/mschulkind-oss/vantage"
-  version "0.6.0"
+  version "0.6.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.0/vantage_0.6.0_darwin_arm64.tar.gz"
-      sha256 "b12361eaa2a465a30403256b3c11dc04ba0a6dc64b26e41f03288977e5c744ad"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.1/vantage_0.6.1_darwin_arm64.tar.gz"
+      sha256 "d5b395d77874c7bc5866e2a1d1e72d49908ba48801873d4cb33bfce40af764bc"
     end
     on_intel do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.0/vantage_0.6.0_darwin_amd64.tar.gz"
-      sha256 "bd52bc27668205fce5e29460a4d3af75be11a19c4d199eda80941d7e4a0c416a"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.1/vantage_0.6.1_darwin_amd64.tar.gz"
+      sha256 "e54eaa74d576fc8f5fb1cce2a911751a097a86fdc61fe1853ca662471d2e4471"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.0/vantage_0.6.0_linux_arm64.tar.gz"
-      sha256 "0d99c853a9b587ab328503c11b05c664acf22f9bf1414cd35deb9a7c34d033d7"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.1/vantage_0.6.1_linux_arm64.tar.gz"
+      sha256 "6eca21281142a8d144ea8693e162e799fe652052ab7a19090eaffd4a80f17e36"
     end
     on_intel do
-      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.0/vantage_0.6.0_linux_amd64.tar.gz"
-      sha256 "276da9b3bbfb50d8a5f058ed8365dc9fe57098ae44f78e32bfcf7e6895cd3c56"
+      url "https://github.com/mschulkind-oss/vantage/releases/download/v0.6.1/vantage_0.6.1_linux_amd64.tar.gz"
+      sha256 "7b00317039c5f245ab5944956280795921f555e24cfc765d7e93656e3980749c"
     end
   end
 
@@ -34,6 +34,6 @@ class Vantage < Formula
 
   test do
     assert_match "vantage-md, version", shell_output("#{bin}/vantage --version")
-    assert_match "vantage-check 0.6.0", shell_output("#{bin}/vantage-check --version")
+    assert_match "vantage-check 0.6.1", shell_output("#{bin}/vantage-check --version")
   end
 end
