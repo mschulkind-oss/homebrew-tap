@@ -1,8 +1,8 @@
 class YoloJail < Formula
   desc "Declarative agentic development environments, from a sealed jail to your host"
   homepage "https://github.com/mschulkind-oss/yolo-jail"
-  url "https://github.com/mschulkind-oss/yolo-jail/archive/refs/tags/v0.11.0.tar.gz"
-  sha256 "1d618e4ca98aed70dc5a376acce18cf449450e19e8eadcb56276544d875279bd"
+  url "https://github.com/mschulkind-oss/yolo-jail/archive/refs/tags/v0.11.1.tar.gz"
+  sha256 "f5ad0e5fcb3eed8e1810139b8431ee04556dfb5db0ed7db4138930e729154988"
   license "Apache-2.0"
 
   depends_on "go" => :build
