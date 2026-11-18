@@ -5,7 +5,7 @@
 class Mavor < Formula
   desc "Local, low-latency voice dictation — hotkey to talk, text lands where you type"
   homepage "https://github.com/mschulkind-oss/mavor"
-  version "0.5.1"
+  version "0.5.2"
   license "Apache-2.0"
 
   depends_on "whisper-cpp"
@@ -14,8 +14,8 @@ class Mavor < Formula
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/mschulkind-oss/mavor/releases/download/v0.5.1/mavor_0.5.1_linux_amd64.tar.gz"
-    sha256 "70094336b915cadc0e436c900ba9afd01ca4b63218098f1e1a5215d40efb68b9"
+    url "https://github.com/mschulkind-oss/mavor/releases/download/v0.5.2/mavor_0.5.2_linux_amd64.tar.gz"
+    sha256 "cca87ba5e15f92bc5e6aa0c4f11ac17279c039ad16c519e26532201bdbce12bb"
     define_method(:install) do
       bin.install "mavor"
       lib.install "libonnxruntime.so", "libsherpa-onnx-c-api.so"
