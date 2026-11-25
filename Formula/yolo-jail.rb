@@ -1,8 +1,8 @@
 class YoloJail < Formula
   desc "Declarative agentic development environments, from a sealed jail to your host"
   homepage "https://github.com/mschulkind-oss/yolo-jail"
-  url "https://github.com/mschulkind-oss/yolo-jail/archive/refs/tags/v0.19.0.tar.gz"
-  sha256 "e0ea50af011cd51a83aa331c6876b1a9d26a900a61affd97e77837e1a9b43323"
+  url "https://github.com/mschulkind-oss/yolo-jail/archive/refs/tags/v0.20.0.tar.gz"
+  sha256 "eba16b852c9573d71bbb3b1f1783e7be6fbcc60b76a2ca7d082f9c995acc4d85"
   license "Apache-2.0"
 
   depends_on "go" => :build
@@ -10,13 +10,13 @@ class YoloJail < Formula
   def install
     ldflags = %W[
       -s -w
-      -X github.com/mschulkind-oss/yolo-jail/internal/version.buildVersion=#{version}+gfad5da31d39e
-      -X github.com/mschulkind-oss/yolo-jail/internal/version.GitCommit=fad5da31d39e
+      -X github.com/mschulkind-oss/yolo-jail/internal/version.buildVersion=#{version}+g3fcba8c74615
+      -X github.com/mschulkind-oss/yolo-jail/internal/version.GitCommit=3fcba8c74615
     ]
     system "go", "build", *std_go_args(output: bin/"yolo", ldflags: ldflags.join(" ")), "./cmd/yolo"
 
     # Stage the prebuilt source bundle beside the binary for checkout-less installs.
-    with_env("VERSION" => "#{version}+gfad5da31d39e", "COMMIT" => "fad5da31d39e") do
+    with_env("VERSION" => "#{version}+g3fcba8c74615", "COMMIT" => "3fcba8c74615") do
       system "scripts/stage-source-bundle.sh", pkgshare.to_s
     end
   end
@@ -29,6 +29,6 @@ class YoloJail < Formula
   end
 
   test do
-    assert_equal "yolo-jail #{version}+gfad5da31d39e", shell_output("#{bin}/yolo --version").strip
+    assert_equal "yolo-jail #{version}+g3fcba8c74615", shell_output("#{bin}/yolo --version").strip
   end
 end
